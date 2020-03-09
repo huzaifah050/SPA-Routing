@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
+body {
+  /* padding-top: 70px; */
+  background: #f4f4f4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.showcase {
+  background-image: url('img/inert2.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color: red;
+  background-blend-mode: multiply;
+}
+.navbar-default {
+  border-color: firebrick;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  border-radius: 0px;
+}
+.home-nav {
+  background: transparent;
+  margin-top: 40px;
+  border-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-collapse.in {
+  background: maroon;
+}
+.brand-img {
+  width: 200px;
+  height: 150px;
+  position: relative;
+  bottom: 40px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: salmon;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: salmon;
+  border: 2px solid salmon;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: salmon;
+  margin-top: 30px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: 0px solid firebrick;
+  border-color: none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: salmon;
+  border: 2px solid salmon;
+  border-radius: 0px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.showcase-text {
+  position: absolute;
+  top: 30vh;
+  width: 150%;
+  margin-left: -30%;
+}
+.showcase-text h1 {
+  font-size: 40px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.showcase-text p {
+  font-size: 30px;
+  color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.showcase-text a {
+  color: white;
+  position: absolute;
+  left: 33%;
+ 
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: 5px 18px;
+  font-size: 28px;
+  line-height: 1.5;
+  background: #007bb5;
+  border: #007bb5;
+}
+
+.btn-group-lg > .btn,
+.btn-lg:hover {
+  background: #007bb5;
+  opacity: 0.9;
+}
+
+footer {
+  background: firebrick;
+  margin-top: 30px;
+  padding: 5px;
+  color: white;
+}
+
+.footers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-footer {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.socials a {
+  padding: 10px;
+  color: #007bb5;
+  font-size: 20px;
+}
+
+.socials a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.login-nav {
+  background: firebrick;
+  height: 120px;
+}
+
+.brand-img-login {
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.navbar-right-login {
+  margin-top: 30px;
+}
+
+form h3 {
+  margin-bottom: 40px;
+}
+
+.startup-search {
+  margin-top: 50px;
+}
+
+.startup-logo {
+  margin-top: 20px;
+}
+
+#txtSearch {
+  background: #f4f4f4;
+}
+
+.startup-btn {
+  padding: 3px 5px;
+}
+
+.panel-heading {
+  padding: 35px 15px;
+}
+
+.panel-heading h1 {
+  font-size: 20px;
+  color: black;
+}
+
+.span-name {
+  font-weight: bolder;
+}
+
+.startup-socials {
+  display: flex;
+  flex-direction: column;
+}
+.paragrap-social {
+  margin-left: 13px;
+}
+
+@media (max-width: 767px) {
+  .brand-img {
+    width: 100px;
+    height: 90px;
+    position: relative;
+    bottom: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .brand-img-login {
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    bottom: 7px;
+  }
+
+  .login-nav {
+    background: firebrick;
+    height: 100px;
+  }
+
+  footer {
+    background: firebrick;
+    margin-top: 100px;
+    padding: 50px;
+    color: white;
+  }
+
+  .footers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
