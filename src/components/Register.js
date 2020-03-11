@@ -1,9 +1,11 @@
 import React from 'react';
 import Footer from './Footer';
+import Navbar from './Navbar';
 
 const Register = () => {
   return (
     <div>
+      <Navbar />
       <div className="container">
         <div className="row">
           <div className="col-md-2"></div>
