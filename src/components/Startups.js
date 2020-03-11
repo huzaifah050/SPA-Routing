@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 export const Startups = () => {
   return (
     <div>
+    <Navbar />
       <div className="container">
         <form>
           <div className="row">
@@ -157,3 +158,5 @@ export const Startups = () => {
     </div>
   );
 };
+
+export default Startups;
