@@ -1,10 +1,12 @@
 import React from 'react';
 import Footer from './Footer';
 import HomeNave from './HomeNave';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div>
+      <HomeNave />
       <div className="showcase">
         <div className="container">
           <div className="row">
@@ -16,9 +18,9 @@ const Home = () => {
                   A collaborative ecosystem for problem solvers and support for
                   Startups.
                 </p>
-                <a href="register.html" className="btn btn-info btn-lg">
+                <Link to="/register" className="btn btn-info btn-lg">
                   Register Now!
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-4"></div>
