@@ -1,5 +1,6 @@
 import React from 'react';
 import logo6 from '../img/logo6.png';
+import { Link, NavLink } from 'react-router-dom';
 
 const HomeNave = () => {
   return (
@@ -34,16 +35,16 @@ const HomeNave = () => {
           >
             <ul className="nav navbar-nav navbar-right">
               <li className="active">
-                <a href="index.html">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="startups.html">Starups</a>
+                <Link to="/startups">Startups</Link>
               </li>
               <li>
-                <a href="register.html">Register</a>
+                <Link to="/register">Register</Link>
               </li>
               <li>
-                <a href="login.html">Login</a>
+                <Link to="/login">Login</Link>
               </li>
             </ul>
           </div>
