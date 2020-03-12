@@ -38,13 +38,13 @@ const HomeNave = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/startups">Startups</Link>
+                <NavLink to="/startups">Startups</NavLink>
               </li>
               <li>
-                <Link to="/register">Register</Link>
+                <NavLink to="/register">Register</NavLink>
               </li>
               <li>
-                <Link to="/login">Login</Link>
+                <NavLink to="/login">Login</NavLink>
               </li>
             </ul>
           </div>
