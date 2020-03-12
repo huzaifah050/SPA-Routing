@@ -5,46 +5,46 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar navbar-default login-nav">
-        <div class="container">
-          <div class="navbar-header">
+      <nav className="navbar navbar-default login-nav">
+        <div className="container">
+          <div className="navbar-header">
             <button
               type="button"
-              class="navbar-toggle collapsed"
+              className="navbar-toggle collapsed"
               data-toggle="collapse"
               data-target="#bs-example-navbar-collapse-1"
               aria-expanded="false"
             >
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a className="navbar-brand" href="#">
               <img
                 src={logo6}
-                class="img-responsive brand-img-login img-circle"
+                className="img-responsive brand-img-login img-circle"
                 alt=""
               />
             </a>
           </div>
 
           <div
-            class="collapse navbar-collapse"
+            className="collapse navbar-collapse"
             id="bs-example-navbar-collapse-1"
           >
-            <ul class="nav navbar-nav navbar-right navbar-right-login">
+            <ul className="nav navbar-nav navbar-right navbar-right-login">
               <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/startups">Startups</Link>
+                <NavLink to="/startups">Startups</NavLink>
               </li>
               <li>
-                <Link to="/register">Register</Link>
+                <NavLink to="/register">Register</NavLink>
               </li>
               <li>
-                <Link to="/login">Login</Link>
+                <NavLink to="/login">Login</NavLink>
               </li>
             </ul>
           </div>
